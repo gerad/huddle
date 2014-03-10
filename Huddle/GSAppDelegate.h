@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
 
 @interface GSAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet WebView *webview;
 
 @end

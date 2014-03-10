@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20EC5A518CE0800005E25D1 /* 1394480763_70318.icns in Resources */ = {isa = PBXBuildFile; fileRef = F20EC5A418CE0800005E25D1 /* 1394480763_70318.icns */; };
 		F216262718CB899100BD2134 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F216262618CB899100BD2134 /* Cocoa.framework */; };
 		F216263118CB899100BD2134 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F216262F18CB899100BD2134 /* InfoPlist.strings */; };
 		F216263318CB899100BD2134 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F216263218CB899100BD2134 /* main.m */; };
@@ -18,6 +19,8 @@
 		F216264718CB899100BD2134 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F216262618CB899100BD2134 /* Cocoa.framework */; };
 		F216264F18CB899100BD2134 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F216264D18CB899100BD2134 /* InfoPlist.strings */; };
 		F216265118CB899100BD2134 /* HuddleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F216265018CB899100BD2134 /* HuddleTests.m */; };
+		F216265B18CB8CE400BD2134 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F216265A18CB8CE400BD2134 /* WebKit.framework */; };
+		F216265D18CBA40600BD2134 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F216265C18CBA40600BD2134 /* js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F20EC5A418CE0800005E25D1 /* 1394480763_70318.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = 1394480763_70318.icns; sourceTree = "<group>"; };
 		F216262318CB899100BD2134 /* Huddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216262618CB899100BD2134 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F216262918CB899100BD2134 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +54,8 @@
 		F216264C18CB899100BD2134 /* HuddleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HuddleTests-Info.plist"; sourceTree = "<group>"; };
 		F216264E18CB899100BD2134 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F216265018CB899100BD2134 /* HuddleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuddleTests.m; sourceTree = "<group>"; };
+		F216265A18CB8CE400BD2134 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F216265C18CBA40600BD2134 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F216265B18CB8CE400BD2134 /* WebKit.framework in Frameworks */,
 				F216262718CB899100BD2134 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +83,7 @@
 		F216261A18CB899100BD2134 = {
 			isa = PBXGroup;
 			children = (
+				F20EC5A418CE0800005E25D1 /* 1394480763_70318.icns */,
 				F216262C18CB899100BD2134 /* Huddle */,
 				F216264A18CB899100BD2134 /* HuddleTests */,
 				F216262518CB899100BD2134 /* Frameworks */,
@@ -95,6 +103,7 @@
 		F216262518CB899100BD2134 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F216265A18CB8CE400BD2134 /* WebKit.framework */,
 				F216262618CB899100BD2134 /* Cocoa.framework */,
 				F216264518CB899100BD2134 /* XCTest.framework */,
 				F216262818CB899100BD2134 /* Other Frameworks */,
@@ -127,6 +136,7 @@
 		F216262D18CB899100BD2134 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F216265C18CBA40600BD2134 /* js */,
 				F216262E18CB899100BD2134 /* Huddle-Info.plist */,
 				F216262F18CB899100BD2134 /* InfoPlist.strings */,
 				F216263218CB899100BD2134 /* main.m */,
@@ -231,10 +241,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F216265D18CBA40600BD2134 /* js in Resources */,
 				F216263118CB899100BD2134 /* InfoPlist.strings in Resources */,
 				F216263F18CB899100BD2134 /* Images.xcassets in Resources */,
 				F216263718CB899100BD2134 /* Credits.rtf in Resources */,
 				F216263D18CB899100BD2134 /* MainMenu.xib in Resources */,
+				F20EC5A518CE0800005E25D1 /* 1394480763_70318.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +395,6 @@
 		F216265518CB899100BD2134 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Huddle/Huddle-Prefix.pch";
@@ -396,7 +407,6 @@
 		F216265618CB899100BD2134 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Huddle/Huddle-Prefix.pch";
@@ -465,6 +475,7 @@
 				F216265618CB899100BD2134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F216265718CB899100BD2134 /* Build configuration list for PBXNativeTarget "HuddleTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +484,7 @@
 				F216265918CB899100BD2134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
