@@ -2,6 +2,7 @@
   return join(function() {
     clickButton("Mute microphone");
     clickButton("Turn camera off");
+    stillHere();
   });
 
   function join(next) {
@@ -27,4 +28,36 @@
       element.dispatchEvent(event);
     });
   }
+
+  function stillHere() {
+    var h1 = findByText(document.querySelectorAll('.d-fg-Tg h1'), 'Are you still there?');
+
+    if (h1) {
+      var popup = closest(h1, '.d-fg-Tg');
+      var button = findByText(popup.querySelectorAll('div[role=button]'), 'Yes');
+      click(button);
+    }
+
+    setTimeout(stillHere, 5 * 1000)
+  }
+
+  function findByText(elements, text) {
+    for (var i = 0, l = elements.length; i < l; i++) {
+      var innerText = elements[i].innerText;
+
+      if (innerText && innerText.trim() === text) {
+        return elements[i];
+      }
+    }
+  }
+
+  function closest(el, selector) {
+    if (!el || matches(el, selector)) { return el; }
+    return closest(el.parentNode, selector);
+  }
+
+  function matches(el, selector) {
+    return el.webkitMatchesSelector(selector);
+  }
+
 })();
